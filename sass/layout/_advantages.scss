@@ -1,19 +1,19 @@
 .advantages {
-  display: flex;
+  &__text {
+    margin-bottom: 30px;
 
-  &__item {
-    width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
+    color: var(--primary-text-color);
   }
 
   &__thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: var(--button-color-portfolio);
     margin-bottom: 30px;
@@ -22,19 +22,88 @@
   &__title {
     margin-bottom: 10px;
 
-    color: var(--title-text-color);
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-  }
 
-  &__text {
-    font-size: 14px;
-    line-height: 1.71;
+    color: var(--title-text-color);
   }
 }
 
-.value.section {
-  padding-bottom: 0;
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 354px;
+    }
+
+    &__thumb {
+      display: flex;
+
+      width: 354px;
+      height: 120px;
+      background-color: var(--button-color-portfolio);
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    &__thumb {
+      width: 270px;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__item {
+      width: 270px;
+    }
+  }
+}
+// .advantages {
+//   display: flex;
+
+//   &__item {
+//     width: 270px;
+
+//     &:not(:first-child) {
+//       margin-left: 30px;
+//     }
+//   }
+
+//   &__thumb {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 270px;
+//     height: 120px;
+//     background-color: var(--button-color-portfolio);
+//     margin-bottom: 30px;
+//   }
+
+//     color: var(--title-text-color);
+//     font-weight: bold;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//   }
+
+// .value.section {
+//   padding-bottom: 0;
+// }
