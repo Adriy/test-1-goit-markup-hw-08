@@ -132,6 +132,14 @@ img {
   text-align: center;
 }
 
+.section__title_mob {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .contacts-head__item:not(:first-child) {
   margin-left: 30px;
 }
@@ -685,14 +693,6 @@ img {
   margin-left: 30px;
 }
 
-.team .section__title {
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 1.18;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .team {
   background-color: var(--button-color-portfolio);
 }
@@ -762,19 +762,24 @@ img {
   }
 }
 
+.section {
+  padding-top: 71px;
+  padding-bottom: 49px;
+}
+
 .company {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .company__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--border-cards-clients);
   border-radius: 4px;
-  margin-bottom: 0;
   transition: border 250ms var(--timing-function);
 }
 
@@ -787,13 +792,61 @@ img {
   fill: var(--accent-color);
 }
 
-.company__item:not(:first-child) {
-  margin-left: 30px;
-}
-
 .company__icon {
+  margin: 16px 52px;
   fill: var(--border-cards-clients);
   transition: fill 250ms var(--timing-function);
+}
+
+.company__item {
+  margin-bottom: 30px;
+}
+
+.company__item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .company__link {
+    width: 226px;
+  }
+  .company__icon {
+    margin: 16px 60px;
+  }
+  .company__item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .company__item {
+    margin-right: 30px;
+  }
+  .company__item:nth-child(3), .company__item:nth-child(6) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section__title_mob {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+  .company__link {
+    width: 170px;
+  }
+  .company__icon {
+    margin: 16px 32px;
+  }
+  .company__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .footer {
