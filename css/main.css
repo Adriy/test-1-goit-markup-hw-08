@@ -68,6 +68,7 @@ img {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -244,6 +245,10 @@ img {
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--border-cards);
   border-top: 0;
+}
+
+.projects__description_big {
+  padding: 20px 24px 56px 24px;
 }
 
 .modal-backdrop {
@@ -1015,14 +1020,11 @@ img {
 }
 
 .filter {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .filter-nav {
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  display: inline-block;
 }
 
 .filter-nav__button {
@@ -1048,15 +1050,8 @@ img {
   margin-left: 8px;
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .projects__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 450px;
   transition: box-shadow 250ms var(--timing-function);
 }
 
@@ -1064,12 +1059,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.projects__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.projects__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+.projects__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .projects__link {
@@ -1082,6 +1073,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .projects__text {
@@ -1101,7 +1093,7 @@ img {
   left: 0;
   overflow: auto;
   width: 100%;
-  height: 100%;
+  height: 101%;
   opacity: 1;
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms var(--timing-function);
@@ -1118,5 +1110,50 @@ img {
   font-size: 18px;
   line-height: 1.55;
   color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .filter-nav {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projects__item {
+    width: 354px;
+  }
+  .projects__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__description_big {
+    padding: 20px 24px 20px 24px;
+  }
+  .filter {
+    padding-top: 94px;
+  }
+  .filter-nav {
+    margin-bottom: 50px;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projects__item {
+    margin-right: 30px;
+    width: 370px;
+  }
+  .projects__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .projects__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
