@@ -166,6 +166,12 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .button {
   cursor: pointer;
   border-style: none;
@@ -574,6 +580,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .header__mobile-menu-btn {
+    display: none;
+  }
   .site-nav.list,
   .contacts-head {
     display: block;

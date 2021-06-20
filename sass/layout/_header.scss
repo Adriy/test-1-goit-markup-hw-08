@@ -57,9 +57,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  // .mobile-menu {
-  //   display: none;
-  // }
+  .header {
+    &__mobile-menu-btn {
+      display: none;
+    }
+  }
 
   .site-nav.list,
   .contacts-head {
