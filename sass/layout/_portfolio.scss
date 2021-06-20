@@ -3,7 +3,9 @@
 }
 
 .filter-nav {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   // padding-left: 0;
   // display: flex;
   // justify-content: center;
@@ -34,6 +36,16 @@
 
   &__item:not(:first-child) {
     margin-left: 8px;
+    margin-bottom: 15px;
+  }
+
+  &__item:nth-child(4) {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  &__item:nth-child(5) {
+    margin-bottom: 40px;
   }
 }
 
