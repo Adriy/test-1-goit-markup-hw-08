@@ -6,7 +6,7 @@
 .hero {
   text-align: center;
   max-width: 1600px;
-  height: 400px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -74,7 +74,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/hero/Header_img.jpg);
+      url(../../images/tablet/hero/header_img.jpg);
   }
 }
 
@@ -88,7 +88,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/hero/Header_img@2x.jpg);
+      url(../../images/tablet/hero/header_img@2x.jpg);
   }
 }
 
@@ -99,7 +99,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/pc/hero/Header_img.jpg);
+      url(../../images/pc/hero/header_img.jpg);
   }
 }
 
@@ -113,7 +113,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/pc/hero/Header_img@2x.jpg);
+      url(../../images/pc/hero/header_img@2x.jpg);
   }
 }
 
