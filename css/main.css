@@ -376,13 +376,20 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-button {
@@ -406,7 +413,7 @@ img {
 }
 
 .contact-form {
-  width: 448px;
+  width: 370px;
   height: auto;
   margin: 0 auto;
 }
@@ -430,6 +437,12 @@ img {
   color: var(--primary-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    width: 448px;
+  }
+}
+
 .contact-form-label {
   position: relative;
   display: block;
@@ -438,7 +451,7 @@ img {
 
 .contact-form-input {
   outline: none;
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding: 0 0 0 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -461,6 +474,16 @@ img {
 
 .contact-form-input:focus:required:not(:placeholder-shown):invalid {
   border-color: #ff0000;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    width: 448px;
+  }
+  .contact-form-input {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .contact-form-message {
@@ -515,15 +538,15 @@ img {
 }
 
 .checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.67;
   color: var(--primary-text-color);
 }
 
 .checkbox-link {
   outline: none;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.67;
   text-decoration-line: underline;
   color: var(--accent-color);
 }
@@ -532,10 +555,21 @@ img {
   outline: 1px solid var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .checkbox-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .contacts-form-btn {
   outline: none;
   position: absolute;
-  left: 165px;
+  left: 125px;
   bottom: 40px;
   display: flex;
   align-items: center;
@@ -558,6 +592,12 @@ img {
 
 .contacts-form-btnn:hover, .contacts-form-btn:focus {
   background-color: var(--button-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-form-btn {
+    left: 165px;
+  }
 }
 
 /* form icon */

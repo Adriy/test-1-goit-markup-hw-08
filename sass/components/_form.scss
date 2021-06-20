@@ -1,5 +1,5 @@
 .contact-form {
-  width: 448px;
+  width: 370px;
   height: auto;
   margin: 0 auto;
 
@@ -26,6 +26,39 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    width: 448px;
+  }
+}
+// .contact-form {
+//   width: 448px;
+//   height: auto;
+//   margin: 0 auto;
+
+//   & > .form-text:first-child {
+//     margin-top: 40px;
+//     margin-bottom: 12px;
+
+//     font-weight: bold;
+//     font-size: 20px;
+//     line-height: 1.15;
+//     text-align: center;
+
+//     color: var(--title-text-color);
+//   }
+
+//   .label {
+//     display: block;
+//     margin-bottom: 4px;
+//     font-size: 12px;
+//     line-height: 1.16;
+//     letter-spacing: 0.01em;
+
+//     color: var(--primary-text-color);
+//   }
+// }
+
 .contact-form-label {
   position: relative;
   display: block;
@@ -34,7 +67,7 @@
 
 .contact-form-input {
   outline: none;
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding: 0 0 0 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -58,6 +91,17 @@
 
   &:focus:required:not(:placeholder-shown):invalid {
     border-color: #ff0000;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    width: 448px;
+  }
+
+  .contact-form-input {
+    width: 448px;
+    height: 40px;
   }
 }
 
@@ -118,16 +162,20 @@
 }
 
 .checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.67;
+  // font-size: 14px;
+  // line-height: 1.71;
 
   color: var(--primary-text-color);
 }
 
 .checkbox-link {
   outline: none;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.67;
+  // font-size: 14px;
+  // line-height: 1.71;
 
   text-decoration-line: underline;
 
@@ -138,10 +186,22 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .checkbox-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .contacts-form-btn {
   outline: none;
   position: absolute;
-  left: 165px;
+  left: 125px;
   bottom: 40px;
   display: flex;
   align-items: center;
@@ -166,6 +226,12 @@
   &n:hover,
   &:focus {
     background-color: var(--button-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-form-btn {
+    left: 165px;
   }
 }
 
