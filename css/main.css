@@ -124,6 +124,7 @@ img {
 }
 
 .mobile-menu {
+  z-index: 9;
   position: fixed;
   top: 0;
   left: 0;
@@ -169,7 +170,7 @@ img {
   margin-left: 28px;
 }
 
-.mobile-social-list__item {
+.mobile-social-list__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
