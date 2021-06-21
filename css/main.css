@@ -27,6 +27,10 @@ body {
   position: relative;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -159,7 +163,6 @@ img {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    display: none;
   }
   .mobile-social-list {
     display: inline-flex;
@@ -349,7 +352,9 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  z-index: 7;
+  padding: 93px 15px 94px 15px;
+  overflow-y: scroll;
   opacity: 1;
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
