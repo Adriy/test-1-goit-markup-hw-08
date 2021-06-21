@@ -112,7 +112,7 @@ img {
 
 .footer__logo {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .logo__span {
@@ -156,8 +156,10 @@ img {
     color: var(--title-text-color);
   }
   .mobile-menu.is-open {
+    opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    display: none;
   }
   .mobile-social-list {
     display: inline-flex;
@@ -299,6 +301,7 @@ img {
 
 .footer-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-list__link {
@@ -1131,33 +1134,18 @@ img {
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
+  text-align: center;
   background: #2f303a;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.contacts-nav__cont {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.thumb {
-  margin-left: 70px;
-}
-
-.footer-title {
-  margin-bottom: 35px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #ffffff;
+.contacts-nav {
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .contacts-nav__map {
@@ -1177,27 +1165,35 @@ img {
   margin-bottom: 9px;
 }
 
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.thumb {
+  margin-bottom: 60px;
+}
+
 /* FOOTER Form */
-.subscription {
-  margin-left: 93px;
-}
-
-.subscription__thumb {
-  display: flex;
-}
-
 .subscription__title {
   margin-bottom: 35px;
 }
 
 .subscription__input {
-  width: 358px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding-left: 16px;
   color: var(--primary-white-color);
 }
 
@@ -1207,8 +1203,6 @@ img {
 
 .subscription__button {
   position: relative;
-  width: 200px;
-  height: 50px;
   border-radius: 4px;
   font-family: inherit;
   font-weight: bold;
@@ -1216,7 +1210,6 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 10px 62px 10px 29px;
-  margin-left: 12px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   border: none;
@@ -1232,6 +1225,45 @@ img {
   position: absolute;
   top: 13px;
   right: 28px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet {
+    display: flex;
+    justify-content: baseline;
+    justify-content: center;
+  }
+  .thumb {
+    margin-left: 165px;
+    margin-bottom: 102px;
+  }
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-decktop {
+    display: flex;
+  }
+  .tablet {
+    display: flex;
+    text-align: start;
+  }
+  .thumb {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+  .subscription__input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .footer-title {
+    text-align: start;
+  }
 }
 
 .filter {
