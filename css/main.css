@@ -728,9 +728,6 @@ img {
   .site-nav.list {
     display: flex;
   }
-  .contacts-head {
-    margin-left: 84px;
-  }
   .contacts-head__cont {
     display: inline-flex;
   }
