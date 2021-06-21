@@ -1088,6 +1088,18 @@ img {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 479px) {
+  .company__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .company__icon {
+    margin: 0;
+  }
+  .company__link {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 60px;

@@ -46,6 +46,22 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  .company {
+    &__item {
+      width: calc((100% - 30px) / 2);
+    }
+
+    &__icon {
+      margin: 0;
+    }
+
+    &__link {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 60px;
